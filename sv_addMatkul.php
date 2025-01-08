@@ -2,11 +2,11 @@
 include "fungsi.php";                           
 
 //ambil variabel dari form
-$idmatkul=$_POST["idmatkul"];
-$nama=$_POST["nama"];                                          //
+$idmatkul=$_POST["idmatkul1"].".".$_POST["idmatkul2"];
+$namamatkul=$_POST["nama"];                                    //
 $sks=$_POST["sks"];                                            //
 $jns=$_POST["jns"];                                            //
-$smt=$_POST["smt"];                                            //
+$smt=$_POST["smt"];
 
 // Pemeriksaan apakah id matkul sudah ada dalam database
 $sql_check = "SELECT * FROM matkul WHERE idmatkul = '$idmatkul'";
@@ -36,4 +36,3 @@ if (mysqli_num_rows($query_check) > 0) {
     }
 }
 ?>
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<script src="js/aturdom.js"></script>
 <head>
 	<title>Sistem Informasi Akademik::Tambah Data Mata Kuliah</title>
 	<meta charset="utf-8">
@@ -16,7 +17,7 @@
 	<div class="utama">		
 		<br><br><br>
 		<h3>TAMBAH DATA MATA KULIAH</h3>	
-		<form method="post" action="sv_addMatkul.php" enctype="multipart/form-data">            <!--     -->
+		<form method="post" action="sv_addMatkul.php" enctype="multipart/form-data">
 			<div class="form-group">
 				<label for="idmatkul1">Kode:</label>
 				<select class="form-control-ku" name="idmatkul1" id="idmatkul1">
@@ -69,8 +70,7 @@
 				</select>
 			</div>
 			<div>		
-				<button class="btn btn-primary" type="text" name="submit" id="submit" value="simpan">Simpan</button>  <!--    -->
-			</div>
+				<button class="btn btn-primary" type="submit" name="submit" id="submit" value="simpan" style="margin: 1vh;">Simpan</button>
 		</form>
 	</div>	
 </body>

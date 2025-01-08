@@ -22,8 +22,8 @@
 		<h2 class="mb-3 text-center">EDIT DATA MATA KULIAH</h2>			
 			<form enctype="multipart/form-data" method="post" action="sv_editMatkul">    <!--       -->
 				<div class="form-group">
-				<label for="idmatkul">Kode:</label>				
-				<input class="form-control" type="text" name="idmatkul" id="idmatkul" value="<?php echo $row['idmatkul']?>" readonly>
+					<label for="idmatkul">Kode:</label>				
+					<input class="form-control" type="text" name="idmatkul" id="idmatkul" value="<?php echo $row['idmatkul']?>" readonly>
 				</div>
 				<div class="form-group">
 					<label for="nama">Nama mata kuliah:</label>
@@ -76,7 +76,7 @@
 					</select>
 				</div>				
 				<div>		
-					<button class="btn btn-primary" type="submit" id="submit">Simpan</button>    <!--   -->
+					<button class="btn btn-primary" type="submit" id="submit" style="margin: 1.5vh;">Simpan</button>    <!--   -->
 				</div>
 			</form>
 	</div>
